@@ -35,25 +35,15 @@
 
                 @if(is_countable($images) && count($images) > 0)
                     <div class="row">
-                        <div class="col-md-8">
-                            <strong>Original Image:</strong>
-                        </div>
-                        <div class="col-md-4">
-                            <strong>Thumbnail Image:</strong>
-                        </div>
+                        
                         @foreach($images as $img)
-                            <div class="col-md-8">
-                                <img src="/images/{{$img->file}}" style="width:400px" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/images/thumbs/{{$img->file}}"  />
-                            </div>
+
                         @endforeach
                     </div>
                 @endif
 
                 @if (count($errors) > 0)
-                   
+
                 @endif
 
                 <form action="{{ URL::to('/upload-image') }}" method="POST" enctype="multipart/form-data">
