@@ -23,8 +23,10 @@
             <div class="wrap">
 
                 <h2>Laravel Multiple Image Upload with Intervention Images Package </h2>
+                <h2>Laravel Multiple Image Upload with Intervention Images Package3 </h2>
 
-                @if ($message = Session::get('success'))
+
+            @if ($message = Session::get('success'))
                     <div class="alert alert-success alert-block">
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <strong>{{ $message }}</strong>
